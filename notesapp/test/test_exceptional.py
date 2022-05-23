@@ -1,7 +1,7 @@
 from rest_framework.test import APITestCase
 from notesapp.models import NotesModel
 #from notesapp.exceptions import IdNotAvailable,AuthorNotAvailable,StatusNotAvailable
-from test.TestUtils import TestUtils
+from notesapp.test.TestUtils import TestUtils
 class NotesAppAPIExceptionalTest(APITestCase):
     def test_search_by_id_fail(self):
         url='http://127.0.0.1:8000/search_by_id/?id=1234'#Non existing id
