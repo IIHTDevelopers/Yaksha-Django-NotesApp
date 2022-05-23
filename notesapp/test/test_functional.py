@@ -1,6 +1,6 @@
 from rest_framework.test import APITestCase
 from notesapp.models import NotesModel
-from test.TestUtils import TestUtils
+from notesapp.test.TestUtils import TestUtils
 class NotesAppAPIFunctionalTest(APITestCase):
     def test_get_request_for_all_records(self):
         url='http://127.0.0.1:8000/notes_crud/'
